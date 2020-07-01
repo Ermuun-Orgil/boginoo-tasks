@@ -27,12 +27,14 @@
     }
 }
 
-@for $i from 1 through 10 {
+
+
+@for $i from 1 through 1000 {
     .h-#{$i} {
-        height: pow(2, $i) + px;
+        height: $i + px;
     }
     .w-#{$i} {
-        width: pow(2, $i) + px;
+        width: $i + px;
     }
     .pa-#{$i} {
         padding: pow(2, $i) + px;
@@ -42,13 +44,19 @@
         padding-right: pow(2, $i) + px;
     }
     .ma-#{$i} {
-        margin: pow(2, $i) + px;
+        margin: $i + px;
     }
     .mt-#{$i} {
-        margin-top: pow(2, $i) + px;
+        margin-top: $i + px;
     }
     .ml-#{$i} {
-        margin-left: pow(2, $i) + px;
+        margin-left: $i + px;
+    }
+    .mr-#{$i} {
+        margin-right: $i + px;
+    }
+    .mb-#{$i} {
+        margin-bottom: $i + px ;
     }
 }
 

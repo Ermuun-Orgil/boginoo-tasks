@@ -125,6 +125,8 @@
 
 .font-ubuntu {
     font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .normal {
@@ -135,7 +137,14 @@
     font-weight: bold;
 }
 
-
+@for $i from 12 through 80 {
+    .fs-#{$i} {
+        font-size: $i + px;
+    }
+    .lh-#{$i} {
+        line-height: $i + px;
+    }
+}
 /* 
     sass ашиглан 12 -оос 80 -ийн хооронд давтан
     font-size, line-height -ийг зааж өгөх боломжтой class-ууд үүсгэ

@@ -32,7 +32,7 @@ export const Layout = ({ children }) => {
             <div className='font-ubuntu fs-16 lh-18'>
                 Made with ♥️ by Nest Academy
             </div>
-            <div className='font-ubuntu fs-16 lh-18' style={{ opacity: 0.2 }}>
+            <div className='font-ubuntu mb-40 fs-16 lh-18' style={{ opacity: 0.2 }}>
                 ©boginoo.io 2020
             </div>
         </div>

@@ -1,10 +1,9 @@
 import React from 'react';
-import { HomeDefault } from './pages';
+import { HomeDefault, Login, Signup, Forget } from './pages';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
 import './style/main.scss';
 
@@ -14,6 +13,15 @@ const App = () => {
             <Switch>
                 <Route path="/" exact>
                     <HomeDefault />
+                </Route>
+                <Route path="/login">
+                    <Login />
+                </Route>
+                <Route path="/signup">
+                    <Signup />
+                </Route>
+                <Route path="/forget">
+                    <Forget />
                 </Route>
             </Switch>
         </Router>

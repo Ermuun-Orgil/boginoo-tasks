@@ -40,8 +40,8 @@
         padding: pow(2, $i) + px;
     }
     .ph-#{$i} {
-        padding-left: pow(2, $i) + px;
-        padding-right: pow(2, $i) + px;
+        padding-left: $i + px;
+        padding-right: $i + px;
     }
     .ma-#{$i} {
         margin: $i + px;
@@ -60,6 +60,10 @@
     }
 }
 
+.no-outline {
+    outline: none;
+}
+
 body {
     margin: 0;
 }
@@ -72,6 +76,9 @@ body {
     height: 100%;
 }
 
+.pointer {
+    cursor: pointer;
+}
 
 // ЭНЭ CSS ЯМАР УЧИРТАЙГ САЙН СУДЛАХ
 * {

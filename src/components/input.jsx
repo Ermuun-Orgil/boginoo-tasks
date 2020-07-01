@@ -22,7 +22,7 @@ export const Input = (props) => {
 
     return (
         <div>
-            <input className={`input ${className}`} {...others} />
+            <input className={`input no-outline ${className}`} {...others} />
         </div>
     );
 };

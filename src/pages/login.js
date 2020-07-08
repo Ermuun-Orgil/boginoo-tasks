@@ -11,16 +11,24 @@ export const Login = () => {
         history.push('/signup')
     }
 
+    const homePush = () => {
+        history.push('/')
+    }
+
     return (
         <Layout>
             <div className='h100 flex flex-col'>
-                <div className='flex mt-60 justify-center items-center'>
-                    {/* <IconStartBracket /> */}
-                    <IconDash />
-                    {/* <IconEndBracket /> */}
-                </div>
-                <div className='font-lobster flex flex-center c-primary fs-56 lh-70'>
-                    Boginoo
+                <div className='flex justify-center w100 mt-60' >
+                    <div className='pointer w-200' onClick={homePush}>
+                        <div className='flex justify-center items-center'>
+                            <IconStartBracket />
+                            <IconDash />
+                            <IconEndBracket />
+                        </div>
+                        <div className='font-lobster flex flex-center c-primary fs-56 lh-70'>
+                            Boginoo
+                        </div>
+                    </div>
                 </div>
                 <h1 className='font-ubuntu flex justify-center c-primary mt-30 fs-32 lh-37'>Нэвтрэх</h1>
                 <div className='flex flex-col  justify-center items-center'>

@@ -6,9 +6,9 @@ export const HomeDefault = () => {
         <Layout>
             <div  className='h100 flex flex-col'>
                 <div className='flex mt-295 justify-center items-center'>
-                    {/* <IconStartBracket /> */}
+                    <IconStartBracket />
                     <IconDash />
-                    {/* <IconEndBracket /> */}
+                    <IconEndBracket />
                 </div>
                 <div className='font-lobster flex flex-center c-primary fs-56 lh-70'>
                     Boginoo

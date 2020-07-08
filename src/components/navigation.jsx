@@ -20,7 +20,7 @@ export const Navigation = (props) => {
 
         <div className='w100 mt-56 flex justify-end items-center'>
             <div className='font-ubuntu fs-20 lh-23 bold c-primary'>ХЭРХЭН АЖИЛЛАДАГ ВЭ?</div>
-            <Button className='nevtreh font-ubuntu fs-20 lh-23 bold c-default h-6.6 w-13.9 ph-4 ml-40 mr-78 b-primary' onClick={loginPush}>Нэвтрэх</Button>
+            <Button className='nevtreh font-ubuntu fs-20 lh-23 bold c-default h-44 w-183 ph-4 ml-40 mr-78 b-primary' onClick={loginPush}>Нэвтрэх</Button>
         </div>
     );
 };

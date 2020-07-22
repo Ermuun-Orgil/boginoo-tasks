@@ -6,25 +6,28 @@ import {
     Route
 } from "react-router-dom";
 import './style/main.scss';
+import {UserContextProvider} from './providers/provider';
 
 const App = () => {
     return (
-        <Router>
-            <Switch>
-                <Route path="/" exact>
-                    <HomeDefault />
-                </Route>
-                <Route path="/login">
-                    <Login />
-                </Route>
-                <Route path="/signup">
-                    <Signup />
-                </Route>
-                <Route path="/forget">
-                    <Forget />
-                </Route>
-            </Switch>
-        </Router>
+        <UserContextProvider>
+            <Router>
+                <Switch>
+                    <Route path="/" exact>
+                        <HomeDefault />
+                    </Route>
+                    <Route path="/login">
+                        <Login />
+                    </Route>
+                    <Route path="/signup">
+                        <Signup />
+                    </Route>
+                    <Route path="/forget">
+                        <Forget />
+                    </Route>
+                </Switch>
+            </Router>
+        </UserContextProvider>
     )
 }
 

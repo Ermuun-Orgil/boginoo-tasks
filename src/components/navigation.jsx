@@ -3,7 +3,7 @@ import { Button } from './';
 import { useHistory } from 'react-router-dom'
 import { useFirebase } from '../firebase';
 import { useContext } from 'react';
-import { UserContext } from '../providers/provider';
+import { UserContext } from '../providers/userProvider';
 
 
 export const Navigation = (props) => {
@@ -39,7 +39,8 @@ export const Navigation = (props) => {
             <div className='font-ubuntu fs-20 lh-23 bold c-primary'>ХЭРХЭН АЖИЛЛАДАГ ВЭ?</div>
             {user && <>
             <div className="font-ubuntu fs-20 bold c-black ml-40 ">{userName}</div>
-            <button className="signout pointer font-ubuntu fs-15 lh-23 bold c-default h-44 w-83 ph-4 ml-15 mr-60 b-primary" onClick={signOut}>signout</button>
+            <button className="signout pointer font-ubuntu fs-15 lh-23 bold c-default h-44 w-83 ph-4 ml-15 mr-13 b-primary" onClick={signOut}>signout</button>
+            <button className="signout pointer font-ubuntu fs-15 lh-23 bold c-default h-44 w-83 ph-4 ml-15 mr-60 b-primary">History</button>
             </>}
             {!user && 
             <Button className='nevtreh font-ubuntu fs-20 lh-23 bold c-default h-44 w-183 ph-4 ml-40 mr-78 b-primary' onClick={loginPush}>Нэвтрэх</Button>

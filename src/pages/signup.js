@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 import { useFirebase } from '../firebase';
 
 export const Signup = () => {
-    const [state, setState] = useState({email: '',username:'', pass1: '123456', pass2: '123456'})
+    const [state, setState] = useState({email: '',username:'', pass1: '', pass2: ''})
 
     const history = useHistory()
 
@@ -25,6 +25,7 @@ export const Signup = () => {
             email: state.email,
             userName: state.username,
         })
+        history.push('/')
     }
 
     const changeEmail = (e) => {
